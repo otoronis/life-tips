@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/:topicChoice', (req, res) => {
-    let topic = req.params.topicChoice
+    let topic = req.params.topicChoice.toLowerCase()
     if (tips[topic]) {
         res.json(tips[topic])
     } else {
