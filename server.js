@@ -3,6 +3,8 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
+app.use(cors())
+
 let tips = {
     'sleep': {
         'tip 1': 'get sunlight withing 30 mins of waking up',
